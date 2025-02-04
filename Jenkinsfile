@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Muditaksh1/nodejs_app_test.git'              
+                git branch: 'main', url: 'https://github.com/Muditaksh1/nodejs_app_test.git'           
             }
         }
 
