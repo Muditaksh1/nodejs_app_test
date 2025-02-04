@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-jenkins-app",
+  "version": "1.0.0",
+  "description": "Node app deployment",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muditaksh1/nodejs_app_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muditaksh1/nodejs_app_test/issues"
+  },
+  "homepage": "https://github.com/Muditaksh1/nodejs_app_test#readme"
+}
