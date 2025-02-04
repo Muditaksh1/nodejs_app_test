@@ -16,6 +16,12 @@ pipeline {
             }
         }
 
+        stage('List Files') {
+            steps {
+                sh 'ls -alh'
+            }
+        }
+
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t $IMAGE_NAME .'
