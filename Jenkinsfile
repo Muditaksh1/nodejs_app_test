@@ -12,7 +12,8 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Muditaksh1/nodejs_app_test.git'              }
+                git 'https://github.com/Muditaksh1/nodejs_app_test.git'              
+            }
         }
 
         stage('Build Docker Image') {
