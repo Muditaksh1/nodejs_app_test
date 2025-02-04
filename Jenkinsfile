@@ -46,14 +46,6 @@ pipeline {
             }
         }
 
-        stage('Cleanup Old Containers') {
-            steps {
-                sh '''
-                docker stop $CONTAINER_NAME || true
-                docker rm $CONTAINER_NAME || true
-                '''
-            }
-        }
     }
 }
 
