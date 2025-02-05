@@ -30,7 +30,13 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 3000:3000 --name $CONTAINER_NAME $IMAGE_NAME'
+                sh '''
+            # Stop and remove any existing container with the same name
+            docker stop nodejs-container || true
+            docker rm nodejs-container || true
+            
+            # Run new container
+            docker run -d -p 3000:3000 --name $CONTAINER_NAME $IMAGE_NAME'''
             }
         }
 
